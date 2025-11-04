@@ -1,8 +1,8 @@
 import React from 'react'
 
-const CompleteTask = ({data}) => {
+const A = ({data}) => {
   return (
-    <div className="flex justify-center items-center p-8">
+      <div className="flex justify-center items-center p-8">
       <div className="w-[320px] h-[280px] bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white rounded-3xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 p-6 flex flex-col justify-between">
         
         {/* Top Section */}
@@ -36,4 +36,4 @@ const CompleteTask = ({data}) => {
   )
 }
 
-export default CompleteTask
+export default A
