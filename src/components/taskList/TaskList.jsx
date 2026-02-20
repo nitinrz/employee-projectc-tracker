@@ -1,9 +1,8 @@
 import React from "react";
-import AcceptTask from "./AcceptTask";
-
-import CompleteTask from "./CompleteTask";
-import FailedTask from "./FailedTask";
 import A from "./A";
+import C from "./C";
+import F from "./F";
+import Accept from "./Accept";
 
 
 
@@ -14,16 +13,16 @@ const TaskList = ({data}) => {
       {/* <A/> */}
       {data.tasks.map((e,idx)=>{
         if(e.active){
-          return <AcceptTask key={idx} data={e}/>
+          return <Accept key={idx} data={e} />
         }
         if(e.newTask){
           return <A key={idx} data={e}/>
         }
         if(e.completed){
-          return <CompleteTask  key={idx} data={e}/>
+          return <C key={idx} data={e}/>
         }
         if(e.failed){
-          return <FailedTask  key={idx} data={e}/>
+          return <F key={idx} data={e}/>
         }
       })}
       
